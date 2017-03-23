@@ -32,7 +32,7 @@ module.exports = {
           }, {
             loader: 'sass-loader',
             options: {
-              includePaths: ['src/styles/scss/abstract/'],
+              includePaths: [],
               url: false
             }
           }]
@@ -41,7 +41,7 @@ module.exports = {
         test: /\.(png|jpg)$/,
         loader: 'url-loader?limit=10000',
         options: {
-          includePaths: ['src/images/']
+          includePaths: []
         }
       }
     ]

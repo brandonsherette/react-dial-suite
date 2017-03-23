@@ -1,0 +1,1 @@
+.dial{position:relative}.dial .body-content{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}.dial circle{stroke-dashoffset:0;transition:stroke-dashoffset 1s linear;stroke-width:1em}.dial .shell{stroke:#666;fill:#b5b5b5}.dial .progress{stroke:#ff9f1e}
