@@ -20,14 +20,14 @@ class Dial extends Component {
       'height': canvasSize
     };
     const progressStyle = {
-      'strokeDashoffset': strokeDashoffset
+      'strokeDashoffset': strokeDashoffset + 'px'
     };
 
     return (
       <div className="dial" style={dialStyle}>
         <svg width={canvasSize} height={canvasSize} xmlns="http://www.w3.org/2000/svg">
-          <circle className="shell" r={radius} cx={pos} cy={pos} strokeDasharray={strokeDasharray} strokeDashoffset="0"></circle>
-          <circle className="progress" r={radius} cx={pos} cy={pos} fill="transparent" strokeDasharray={strokeDasharray} style={progressStyle}></circle>
+          <circle className="shell" r={radius} cx={pos} cy={pos} strokeDasharray={strokeDasharray + 'px'} strokeDashoffset="0px"></circle>
+          <circle className="progress" r={radius} cx={pos} cy={pos} fill="transparent" strokeDasharray={strokeDasharray + 'px'} style={progressStyle}></circle>
         </svg>
         <div className="body-content">{children}</div>
       </div>
